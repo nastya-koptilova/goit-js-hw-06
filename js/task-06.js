@@ -4,7 +4,7 @@ const onvalidationInputBlur = () => {
   if (validationInputEl.value.length === Number(validationInputEl.getAttribute("data-length"))) {
     validationInputEl.classList.remove("invalid");
     validationInputEl.classList.add("valid");
-  } else if (validationInputEl.value.length !== Number(validationInputEl.getAttribute("data-length"))) {
+  } else {
     validationInputEl.classList.remove("valid");
     validationInputEl.classList.add("invalid");
   }
